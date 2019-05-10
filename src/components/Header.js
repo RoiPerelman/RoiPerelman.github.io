@@ -3,7 +3,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 
-export const  Header = () => {
+const Header = () => {
   return (
     <>
       <AppBar position="sticky" color="default">
@@ -16,3 +16,5 @@ export const  Header = () => {
     </>
   );
 }
+
+export default Header;
