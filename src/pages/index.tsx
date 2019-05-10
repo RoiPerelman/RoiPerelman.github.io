@@ -4,7 +4,6 @@ import styled from "styled-components"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
-import SEO from "../components/seo"
 
 const StyledH1 = styled.h1`
   color: green;
@@ -12,7 +11,6 @@ const StyledH1 = styled.h1`
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <StyledH1>Hi people</StyledH1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>

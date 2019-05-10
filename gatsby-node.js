@@ -11,10 +11,12 @@ exports.createPages = ({ actions, graphql }) => {
 
   const cheatsheeTemplate = path.resolve(`src/templates/cheatsheetTemplate.js`)
 
+  // sort: { order: DESC, fields: [frontmatter___date] }
+
   return graphql(`
     {
       allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
+        sort: { order: DESC, fields: [frontmatter___title] }
         limit: 1000
       ) {
         edges {

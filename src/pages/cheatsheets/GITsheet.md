@@ -1,6 +1,6 @@
 ---
-path: "/cheatsheet/gitsheet"
-date: "2017-11-07"
+path: "/cheatsheet/GITsheet"
+# date: "2017-11-07"
 title: "GITsheet"
 ---
 
@@ -23,13 +23,13 @@ Roi's GITsheet
 
 ## reset:
 * `git reset HEAD~"num"` # go back num commits
-** `--soft` # move commits to staging snapshot
-** `--mixed` # default, move commits to working directory
-** `--hard` # remove all num commits completly
+    * `--soft` # move commits to staging snapshot
+    * `--mixed` # default, move commits to working directory
+    * `--hard` # remove all num commits completly
 * `git reset HEAD~"num" "filepath"` - file only gets from staged snapshot to working directory
 *can be used from commit and puts file both is staged snapshot and working directory*
 
-**`git revert` is only used to make a new commit that reverts to a previous commit.**
+* `git revert` - used to make a new commit that reverts to a previous commit.
 
 ## Checkout:
 * `git checkout "branch_name"` # move branch
@@ -60,4 +60,4 @@ Roi's GITsheet
 * `git fetch` # updates local info about server changes
 * `git rebase origin/<branch_name>` # rabases the current branch changes on top of branch name server changes
 
-*`vi ~/.gitconfig`*
+* `vi ~/.gitconfig`
