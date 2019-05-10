@@ -9,10 +9,9 @@ const path = require('path');
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
-  const cheatsheeTemplate = path.resolve(`src/templates/cheatsheetTemplate.js`)
+  const cheatsheeTemplate = path.resolve(`src/templates/cheatsheetTemplate.tsx`)
 
   // sort: { order: DESC, fields: [frontmatter___date] }
-
   return graphql(`
     {
       allMarkdownRemark(

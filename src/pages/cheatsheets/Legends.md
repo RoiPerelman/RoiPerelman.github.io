@@ -83,3 +83,5 @@ god uses the logos (the truth - word of god) to cast the potential into order.
 is habitable order good? the hypothesis is that if good speech gives rise to the order than it is good.
 Truthfull speech!!!!!!!!!!
 
+
+* you friend or foe?
