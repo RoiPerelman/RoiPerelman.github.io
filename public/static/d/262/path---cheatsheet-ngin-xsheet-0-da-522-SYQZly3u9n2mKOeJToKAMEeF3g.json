@@ -1,1 +1,0 @@
-{"data":{"markdownRemark":{"html":"<h1>Roi's NginXsheet</h1>\n<ul>\n<li><code>/usr/local/etc/nginx/nginx.conf</code> # configuration location</li>\n<li><code>sudo nginx</code> # start</li>\n<li><code>sudo nginx -s stop</code> # stop</li>\n</ul>","frontmatter":{"path":"/cheatsheet/NginXsheet","title":"NginXsheet"}}},"pageContext":{"isCreatedByStatefulCreatePages":false}}
