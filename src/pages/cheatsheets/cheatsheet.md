@@ -1,8 +1,6 @@
 ---
 path: "/cheatsheet/"
-title: "BashSheet"
+title: "cheatsheet"
 ---
 
-Roi's cheatsheet
-================
-
+# Roi's cheatsheet

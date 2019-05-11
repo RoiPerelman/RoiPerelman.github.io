@@ -1,14 +1,14 @@
-import React from "react"
-import { Link } from "gatsby"
-import styled from "styled-components"
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
 
-import Layout from "../components/layout"
-import Image from "../components/image"
+import Layout from "../components/layout";
+import Image from "../components/image";
 
 const ContainerDiv = styled.div`
   display: grid;
-  justify-items: center
-`
+  justify-items: center;
+`;
 
 const IndexPage = () => (
   <Layout>
@@ -21,6 +21,6 @@ const IndexPage = () => (
       <Link to="/cheatsheet/GITsheet/">Go to GITsheet</Link>
     </ContainerDiv>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
