@@ -2,15 +2,14 @@ import React, { ReactNode } from "react";
 import styled from "styled-components";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Header from "./header";
-import Sidebar from "./sidebar";
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    ". header"
-    "sidebar main";
+    "header"
+    "main";
   background-color: white;
 `;
 
@@ -18,19 +17,16 @@ const GridArea = styled.div<{ gridArea: string }>`
   grid-area: ${props => props.gridArea};
 `;
 
-type LayoutProps = {
+type IndexLayoutProps = {
   children: ReactNode;
 };
-const Layout = ({ children }: LayoutProps) => {
+const IndexLayout = ({ children }: IndexLayoutProps) => {
   return (
     <>
       <CssBaseline />
       <Grid>
         <GridArea gridArea={"header"}>
           <Header />
-        </GridArea>
-        <GridArea gridArea={"sidebar"}>
-          <Sidebar />
         </GridArea>
         <GridArea gridArea={"main"}>
           <main>{children}</main>
@@ -40,4 +36,4 @@ const Layout = ({ children }: LayoutProps) => {
   );
 };
 
-export default Layout;
+export default IndexLayout;
