@@ -7,15 +7,20 @@ import Sidebar from "./sidebar";
 const Grid = styled.div`
   display: grid;
   grid-template-columns: 240px 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: 64px calc(100vh - 64px);
   grid-template-areas:
     ". header"
     "sidebar main";
   background-color: white;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
 `;
 
 const GridArea = styled.div<{ gridArea: string }>`
   grid-area: ${props => props.gridArea};
+  border-style: solid;
+  border-color: black;
 `;
 
 type LayoutProps = {

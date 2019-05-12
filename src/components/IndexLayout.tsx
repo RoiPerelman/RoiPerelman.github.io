@@ -11,6 +11,8 @@ const Grid = styled.div`
     "header"
     "main";
   background-color: white;
+  height: 100vh;
+  width: 100vw;
 `;
 
 const GridArea = styled.div<{ gridArea: string }>`

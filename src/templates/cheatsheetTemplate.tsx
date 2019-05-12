@@ -10,9 +10,12 @@ const ContainerDiv = styled.div`
 const Section = styled.section`
   background: white;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
-  width: 80%;
+  width: 70vw;
+  height: calc(100vh - 64px - 45px - 1rem - 45px - 1rem);
   padding: 50px;
   font-family: "Crimson Text", serif;
+  overflow: scroll;
+  position: inline;
 `;
 
 const H1 = styled.h1`
@@ -21,7 +24,7 @@ const H1 = styled.h1`
   letter-spacing: 15px;
   font-weight: 400;
   font-family: "Crimson Text", serif;
-  margin: 3rem 0;
+  margin: 1rem 0;
 `;
 
 const Template = ({ data }: any) => {
